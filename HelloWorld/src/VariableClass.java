@@ -10,5 +10,6 @@ public class VariableClass {
 	sum = num1 + num2 +num3;
 	
 	System.out.println("sum 값:" + sum);
+	System.out.println(num1 + num2 + num3);
 }
 }
