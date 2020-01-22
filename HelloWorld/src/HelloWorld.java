@@ -1,16 +1,38 @@
 
 public class HelloWorld {
 	/*
-	 * ¿©·¯ ¶óÀÎÀ» ÁÖ¼®Ã³¸® ÇÒ¶§ »ç¿ëÇÕ´Ï´Ù. ÀÛ¼ºÀÚ: ÀÌÃ¢È£ 2020.01.21
+	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½Ã³ï¿½ï¿½ ï¿½Ò¶ï¿½ ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½Û¼ï¿½ï¿½ï¿½: ï¿½ï¿½Ã¢È£ 2020.01.21
 	 */
 	public static void main(String[] args) {
-		// Hello World Ãâ·ÂÇÏ´Â ±¸¹®.
+		// Hello World ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½.
 		int age = 26;
 		int year = 2020;
 		System.out.println("Hello, world");
-		System.out.println("ÀÚ¹Ù´Â Àç¹Õ´Â ¾ğ¾î.");
-		System.out.println("¿ÃÇØ´Â" + year + "³â");
-		System.out.println("³» ³ªÀÌ´Â " + age + "ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½Ú¹Ù´ï¿½ ï¿½ï¿½Õ´ï¿½ ï¿½ï¿½ï¿½.");
+		System.out.println("ï¿½ï¿½ï¿½Ø´ï¿½" + year + "ï¿½ï¿½");
+		System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ " + age + "ï¿½Ô´Ï´ï¿½.");
+		
+		int height = 170;
+		int weight = 65;
+		year = 2021;
+		System.out.println("í‚¤:" + height + "ëª¸ë¬´ê²Œ:" + weight + "ë…„ë„:" +year);
+		
+		int firstDayOfYear = 1;
+		
+		int num1,num2,num3;
+		num1 = 90;
+		num2 = 80;
+		num3 = 70;
+		
+		int summary = num1 + num2 + num3;
+		System.out.println("summaryê°’:" + summary);
+		
+		long sum = 0;
+		int firstValue = 2000000000;
+		int secondValue = 1000000000;
+		sum = (long)firstValue + secondValue;
+		System.out.println("ë‘ìˆ˜ì˜ í•©ì€: " + sum);
+		
 	}
 
 }
