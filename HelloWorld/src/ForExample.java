@@ -16,9 +16,15 @@ public class ForExample {
     //    sum = sum + i;
 //		System.out.println("i: " + i + ", sum: " + sum);
 //	}
-	int n = 3;
-	for (int i = 1; i <=9; i++) {
-		System.out.println(n + "x" + i + "=" + (n*i));
-	}
+//	int n = 3;
+//	for (int i = 1; i <=9; i++) {
+//		System.out.println(n + "x" + i + "=" + (n*i));
+//	}
+		int sum = 0;
+		for(int i=1; i<=5; i++) {
+			sum = sum + i;
+		}
+	
+		System.out.println("합계는: " + sum);
 }
 }
