@@ -24,6 +24,7 @@ public class WhileSumExample {
 		while (i<=9) {	
 		 System.out.println(n + "x" + i + "=" + (n*i));
 		  i++;
+		  
 		}
 	}
 
