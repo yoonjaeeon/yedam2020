@@ -37,6 +37,6 @@ public class StudentArrayExample {
 			if (stdAry[i].getName().equals("choi"))            // 주소값
 				System.out.println(stdAry[i].getName() + " " + stdAry[i].getAge());
 		}
-	}
+	}//end of main
 
-}
+}//end of class
