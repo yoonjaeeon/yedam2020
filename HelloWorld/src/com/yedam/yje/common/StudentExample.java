@@ -10,7 +10,7 @@ public class StudentExample {
 		stn.study();
 		Student snt = new Student("name");
 		snt.eat();
-		
+
 	}
 
 }

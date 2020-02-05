@@ -2,6 +2,7 @@ package com.yedam.yje.interfaces.impl;
 
 import com.yedam.yje.interfaces.model.EmpService;
 import com.yedam.yje.interfaces.model.Employee;
+import com.yedam.yje.interfaces.model.Employees;
 
 //구현 클래스
 public class EmpServiceImpl implements EmpService {
@@ -47,6 +48,32 @@ public class EmpServiceImpl implements EmpService {
 				emps[i] = null;
 			}
 		}
+	}
+
+	@Override
+	public void searchEmployees() {
+		System.out.println("DB 조회");
+		EmpDAO dao = new EmpDAO();
+		Employees[] empArray = dao.getEmployees();
+		for (Employees emp : empArray) {
+			if (emp != null) {
+				System.out.println(emp);
+			}
+		}
+//		for (int i = 0; i < empArray.length; i++) {
+//			Employees emp = empArray[i];
+//			if (emp != null) {
+//				System.out.println(emp);
+//			}                   
+//		}
+	}
+
+	@Override
+	public void insertEmployees(Employees emp) {
+		System.out.println("DB 입력 기능");
+	      EmpDAO dao = new EmpDAO();
+	      dao.insertEmployees(emp);
+		
 	}
 
 }
