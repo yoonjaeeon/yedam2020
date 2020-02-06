@@ -1,5 +1,7 @@
 package com.yedam.yje.interfaces.impl;
 
+import java.util.List;
+
 import com.yedam.yje.interfaces.model.EmpService;
 import com.yedam.yje.interfaces.model.Employee;
 import com.yedam.yje.interfaces.model.Employees;
@@ -71,9 +73,29 @@ public class EmpServiceImpl implements EmpService {
 	@Override
 	public void insertEmployees(Employees emp) {
 		System.out.println("DB 입력 기능");
-	      EmpDAO dao = new EmpDAO();
-	      dao.insertEmployees(emp);
-		
+		EmpDAO dao = new EmpDAO();
+		dao.insertEmployees(emp);
+
+	}
+
+	@Override
+	public List<Employees> getDBEmployees() {
+		EmpDAO dao = new EmpDAO();
+		List<Employees> list = dao.getEmpList();
+		return list;
+	}
+
+	@Override
+	public Employees getDBEmployee() {
+		return null;
+	}
+
+	@Override
+	public void insertDBEmp(Employees emp) {
+	}
+
+	@Override
+	public void updateDBEmp(Employees emp) {
 	}
 
 }
